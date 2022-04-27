@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Ange1D/fizzbuzz/issues"
   },
-  "homepage": "https://github.com/Ange1D/fizzbuzz#readme"
+  "homepage": "https://github.com/Ange1D/fizzbuzz#readme",
+  "devDependencies": {
+    "jest": "^28.0.1"
+  }
 }
