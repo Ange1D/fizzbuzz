@@ -1,4 +1,4 @@
-const ExplorerService = require("../../lib/utils/ExplorerService");
+const ExplorerService = require("../../lib/services/ExplorerService");
 
 describe("Unit Tests for ExplorerService Class", () => {
     test('1) Filter Explorers By Mission', () => {
