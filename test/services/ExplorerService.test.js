@@ -28,4 +28,9 @@ describe("Unit Tests for ExplorerService Class", () => {
         expect(explorersUsername).not.toBe("");
     });
 
+    const explorersWithJavascript = ExplorerService.getExplorersByStack(explorers, "javascript");
+    test.each(explorersWithJavascript)("4.%#) Explorers Filter By Stack ", (explorer) => {
+        expect(explorer.stacks).toContain("javascript");
+    });
+
 });
