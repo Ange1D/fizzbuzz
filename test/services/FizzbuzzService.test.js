@@ -43,3 +43,17 @@ describe("Unit Test FIZZBUZZ", () => {
 
 });
 
+
+describe("Unit Test FIZZBUZZ by number", () => {
+    test("1) Test apply Validation Number", () => {
+        const trick1 = FizzbuzzService.applyValidationInNumber(1);
+        const trick2 = FizzbuzzService.applyValidationInNumber(3);
+        const trick3 = FizzbuzzService.applyValidationInNumber(5);
+        const trick4 = FizzbuzzService.applyValidationInNumber(15);
+
+        expect(trick1).toBe(1);
+        expect(trick2).toBe("FIZZ");
+        expect(trick3).toBe("BUZZ");
+        expect(trick4).toBe("FIZZBUZZ");
+    });
+});
