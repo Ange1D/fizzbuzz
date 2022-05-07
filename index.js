@@ -2,4 +2,4 @@ const Reader = require("./lib/utils/Reader");
 
 const explorers = Reader.readJsonFile("explorers.json");
 
-console.log(explorers)
+console.log(explorers);
